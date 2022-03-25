@@ -1,0 +1,393 @@
+body {
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+    background-color: #aaaaa0;
+  }
+
+/* 48em = 768px */    
+
+/* Full screen */
+/* header */
+    @media (min-width: 48em) {
+        a {
+            color: #f8e109;
+          }
+        .header {
+            background-color: #aaaaa0;
+            box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .header img{
+            display: none;
+        }
+
+        .header .logo {
+            display: block;
+            float: left;
+            font-size: 2em;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+    
+
+        .header ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: #646464;
+        }
+        .header li {
+            float: left;
+        }
+
+        .header li a {
+            display: block;
+            padding: 20px 20px;
+            border-right: 1px solid #f4f4f4;
+            text-decoration: none;
+        }
+        .header li a:hover,
+        .header .menu-btn:hover {
+        background-color: #000000;
+        }
+
+        .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        }
+        .header .menu-icon {
+        display: none;
+        }
+
+/* body */
+        .front img{
+        width: 100%;
+        height: 100%;
+        }
+        .topview{
+            display: none;
+        }
+        .topview img{
+            display: none;
+        }
+
+        .btn_1 {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_1:hover {
+            background-color: #4b4b4b;
+        }
+        .btn_2 {
+            position: absolute;
+            right: 45%;
+            top: 15%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_2:hover {
+            background-color: #4b4b4b;
+        }
+        .btn_3 {
+            position: absolute;
+            left: 3%;
+            top: 50%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_3:hover {
+            background-color: #4b4b4b;
+        }
+
+
+/* left wall full screen */
+    .room img{
+        position: absolute;
+    }
+
+    .l_wall_full img{
+        width: 99%;
+    }
+    .l_frames{
+        display: flex;
+        flex-direction: row;
+    }
+    .l_frames img{
+        width: 15%;
+        z-index: 2;
+
+    }
+    .l_1 img{
+        top: 40%;
+        left: 20%;
+        z-index: 1;
+    }
+    .l_2 img{
+        top: 40%;
+        left: 43%;
+        z-index: 1;
+    }
+    .l_3 img{
+        top: 40%;
+        left: 65%;
+        z-index: 1;
+    }
+
+/* facing wall full screen */
+    .face_room img{
+        position: absolute;
+    }
+
+    .f_wall_full img{
+        width: 99%;
+    }
+    .f_frames img{
+        width: 15%;
+        z-index: 2;
+
+    }
+    .f_1 img{
+        top: 40%;
+        left: 20%;
+        z-index: 1;
+    }
+    .f_2 img{
+        top: 40%;
+        left: 43%;
+        z-index: 1;
+    }
+    .f_3 img{
+        top: 40%;
+        left: 65%;
+        z-index: 1;
+    }
+
+/* right wall full screen */
+    .right_room img{
+        position: absolute;
+    }
+
+    .r_wall_full img{
+        width: 99%;
+    }
+    .r_frames img{
+        width: 15%;
+        z-index: 2;
+
+    }
+    .r_1 img{
+        top: 40%;
+        left: 20%;
+        z-index: 1;
+    }
+    .r_2 img{
+        top: 40%;
+        left: 43%;
+        z-index: 1;
+    }
+    .r_3 img{
+        top: 40%;
+        left: 65%;
+        z-index: 1;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* on mobile screen */
+@media (max-width: 767px) {
+/* header */
+    .header {
+        background-color: #646464;
+    }
+    #kev{
+        display: none;
+    }
+
+    .logo_img{
+        display: flex;
+        justify-content: center;        
+        background-color: #646464;
+    }
+    .logo_img img{
+        max-height: 150px;
+    }
+        .header li {
+            display: none;        
+        }
+        .header li a {
+            display: none;
+        }
+        .header .menu {
+            display: none;
+        }
+/* body */
+        body {
+            background-image: url('img/marble_bg.jpg');
+        }
+    /* home page mobile */
+        .front img{
+            display: none;
+            }
+
+        .topview img{
+            max-width: 100%;
+        }
+        .btn_1 {
+            position: absolute;
+            left: 10%;
+            top: 65%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_1:hover {
+            background-color: #4b4b4b;
+        }
+        .btn_2 {
+            position: absolute;
+            right: 38%;
+            top: 35%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_2:hover {
+            background-color: #4b4b4b;
+        }
+        .btn_3 {
+            position: absolute;
+            right: 10%;
+            top: 65%;
+            z-index: 2;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn_3:hover {
+            background-color: #4b4b4b;
+        }
+        
+
+    /* left wall mobile */
+    .l_wall_full{
+        display: none;
+    }
+    .l_wall_full img{
+        display: none;
+    }
+    .l_frames{
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+        padding: 10%;
+    }
+    .l_frames img{
+        width: 100%;
+    }
+
+    /* facing wall mobile */
+    .f_wall_full{
+        display: none;
+    }
+    .f_wall_full img{
+        display: none;
+    }
+    .f_frames{
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+        padding: 10%;
+    }
+    .f_frames img{
+        width: 100%;
+    }
+    
+    /* right wall mobile */
+    .r_wall_full{
+        display: none;
+    }
+    .r_wall_full img{
+        display: none;
+    }
+
+    .r_frames{
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+        padding: 10%;
+    }
+    .r_frames img{
+        width: 100%;
+    }
+}
